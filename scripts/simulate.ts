@@ -1,8 +1,8 @@
 /**
  * 렌더링 없이 물리만 돌려보는 시뮬레이션. 게임 루프와 같은 10ms 고정 스텝, Marble 과 같은 배치·정지 판정·shake 를 쓴다.
  *
- *   npx tsx scripts/simulate.ts bench [6,16,30,100,300,1000]   맵별·구슬 수별 골인 시각 분포 (timeScale 1)
- *   npx tsx scripts/simulate.ts stuck [6,16,30]                 정지 판정 문턱 기존 vs 수정, timeScale 1 과 0.2 에서 shake 비교
+ *   yarn simulate bench [6,16,30,100,300,1000]   맵별·구슬 수별 골인 시각 분포 (timeScale 1)
+ *   yarn simulate stuck [6,16,30]                정지 판정 문턱 기존 vs 수정, timeScale 1 과 0.2 에서 shake 비교
  *
  * Math.random 을 시드 고정으로 바꿔서 같은 조건이면 같은 궤적이 나온다.
  */
